@@ -1,0 +1,24 @@
+
+
+article {
+	width: 100%;
+	margin: 0px;
+	border: none;
+}
+
+form {
+	text-align: center;
+}
+
+textarea,input:not([type="submit"]):not([type="reset"]):not([type="radio"]):not([type="checkbox"])
+{
+	width: 50%;
+}
+
+@media only screen and (max-width: 1024px)
+{
+	textarea,input:not([type="submit"]):not([type="reset"]):not([type="radio"]):not([type="checkbox"])
+	{
+		width: 95%;
+	}
+}

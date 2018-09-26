@@ -1,0 +1,187 @@
+<html>
+<head>
+   <head>
+    <title>Reservation</title>
+    <style type="text/css">
+    @import url(style_res.css);
+
+
+ </style>
+
+ <script type="text/javascript" >
+
+   function v_email(){
+
+      var e1 = document.getElementsByName("email")[0].value;
+      var e2 = document.getElementsByName("email_c")[0].value;
+
+      
+
+      if(e1 != e2){
+         alert("Les emails ne correspondent pas !")
+      }
+
+   }
+
+
+   function v_jours() {
+
+      var s_a = document.getElementsByName("date_a")[0].value;
+      
+
+      var s_d = document.getElementsByName("date_d")[0].value;
+
+
+      var s_as = new Date(s_a).getTime();
+      var s_ds =  new Date(s_d).getTime();
+
+      
+      var nb_s = (parseInt(s_ds)-parseInt(s_as))
+
+      if(nb_s > 0){
+
+
+         var n_j = nb_s/8.64e+7;
+
+
+         document.getElementsByName("nb_nuits")[0].value = n_j;
+      }
+      else {
+         alert("Date de départ postérieure à date d'arrivée");
+      }
+
+      
+   }
+
+   function v_personne(){
+
+      var e = document.getElementById("chambre");
+      var etat = e.options[e.selectedIndex].value;
+
+      alert(etat);
+
+      if (etat==1) {
+         
+         document.getElementById("pers_4").style.display = 'none';
+         document.getElementById("pers_3").style.display = 'none';
+         document.getElementById("pers_2").style.display = 'none';
+         document.getElementById("pers_1").style.display = 'inline';
+      }
+      
+      if (etat==2) {
+         document.getElementById("pers_4").style.display = 'none';
+         document.getElementById("pers_3").style.display = 'none';
+         document.getElementById("pers_2").style.display = 'inline';
+         document.getElementById("pers_1").style.display = 'inline';
+      }
+
+      if (etat==3) {
+
+         document.getElementById("pers_4").style.display = 'none';
+         document.getElementById("pers_3").style.display = 'inline';
+         document.getElementById("pers_2").style.display = 'inline';
+         document.getElementById("pers_1").style.display = 'inline';
+
+      }
+      if(etat==4) {
+         document.getElementById("pers_4").style.display = 'inline';        
+         document.getElementById("pers_3").style.display = 'inline';        
+         document.getElementById("pers_2").style.display = 'inline';        
+         document.getElementById("pers_1").style.display = 'inline';     }
+   }
+</script>
+<meta charset="UTF-8">
+
+
+</head>
+<body>
+   <fieldset><legend>Hotel RT **</legend>
+      <div id="background">
+         <img id="logo_net" src="logo_net1.png" alt=logo>
+
+         <div class="Tableau">
+            <form>
+               <p class="legende">
+                  <span class="col1">Nom</span>
+                  <span class="col2"><input type="text" name="name" required pattern="[A-Za-z]+"></span>
+               </p>
+               <p class="legende">
+                  <span class="col1">Prenom</span>
+                  <span class="col2"><input type="text" name="firstname" required pattern="[A-Za-z]+"></span>
+               </p>
+               <p class="legende">
+                  <span class="col1">eMail</span>
+                  <span class="col2"><input type="text" name="email"></span>
+               </p>
+               <p class="legende">
+                  <span class="col1">Confirmer l'eMail</span>
+                  <span class="col2"><input type="text" name="email_c" onblur="v_email()"></span>
+               </p>
+               <p class="legende">
+                  <span class="col1">Téléphone</span>
+                  <span class="col2"><input type="text" name="tel" required pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$
+                     "></span>
+                  </p>
+                  <p class="legende">
+                     <span class="col1">Date arrivée</span>
+                     <span class="col2"><input type="date" name="date_a" ></span>
+                  </p>
+                  <p class="legende">
+                     <span class="col1">Date départ</span>
+                     <span class="col2"><input type="date" name="date_d" onchange="v_jours()"></span>
+                  </p>
+                  <p class="legende">
+                     <span class="col1">Nombre de nuits</span>
+                     <span class="col2"><input type="text" name="nb_nuits" required pattern="[0-9][0-9]" readonly></span>
+                  </p>
+                  <p class="legende">
+                     <span class="col1">Type de chambres</span>
+                     <span class="col2">
+                        <SELECT id="chambre" size="1" onchange="v_personne()">
+                           <OPTION value="1" id="solo">Solo
+                              <OPTION value="2" id="duo">Duo
+                                 <OPTION value="3" id="famille">Famille
+                                    <OPTION value="4" id="suite">Suite
+                                    </SELECT>
+                                 </span>
+                              </p>
+                              <p class="legende">
+                                 <span class="col1">Nombre de personnes</span>
+                                 <span class="col2" >
+                                    <span id="pers_1"><input type="radio" class="nbpers" name="nb_pers" value="1"> 1</span>
+                                    <span id="pers_2"><input type="radio" class="nbpers" name="nb_pers" value="2"> 2</span>
+                                    <span id="pers_3"><input type="radio" class="nbpers" name="nb_pers" value="3"> 3</span>
+                                    <span id="pers_4"><input type="radio" class="nbpers" name="nb_pers" value="4"> 4</span>
+                               </span>
+                              </p>
+
+                              
+                              <p class="legende">
+                                 <span class="col1">Nombre de petits-déjeuners</span>
+                                 <span class="col2"><input type="text" name="nb_dej" required pattern="[0-9][0-9]"></span>
+                              </p>
+                              <p class="legende">
+                                 <span class="col1" id="option">Options</span>
+                                 <span class="col2" id="option1">
+                                   TV <input type="checkbox" name="TV"><br>
+                                   Minibar<input type="checkbox" name="Minibar"> <br>
+                                   Balcon vue mer  <input type="checkbox" name="Balcon vue mer"><br>
+                                   Place de parking <input type="checkbox" name="Place de parking"> <br>
+                                </span>
+                             </p>
+                             <p class="legende">
+                              <span class="col1">
+                                 <input type="submit" value="Submit">
+                              </span>
+                              <span class="col2">
+                                 <input type="reset">
+                              </span>
+                           </p>
+                           
+                        </form>
+
+
+                     </div>
+                  </div>
+                  <body>
+                     </html>

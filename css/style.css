@@ -1,0 +1,378 @@
+body
+{
+  width: 100%;
+  margin: 0px;
+  color: #3f78ab;
+  font-family: 'Open Sans'
+}
+
+h1,h2,h3,h4,h5,h6
+{
+  text-shadow: 5px 5px 5px #777;
+}
+
+
+
+header
+{
+  width: inherit;
+  background-color: #F0F8FF;
+  margin: 0px 0px 10px 0px;
+  color: #000;
+  float: left;
+  font-family: 'Raleway', sans-serif;
+}
+
+#imgentete
+{
+  float: left;
+  width: 300px;
+}
+
+nav
+{
+  float: right;
+  display: block;
+  list-style: none;
+  margin: 0px 0px 0px 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+nav ul
+{
+  list-style-type: none;
+  margin: 30px 5px 0px 5px;
+
+}
+
+nav ul li {
+  float: left;
+  margin: 0px 10px 5px 0px;
+  text-decoration-color: #606060;
+  padding: 3px;
+}
+
+nav ul li:hover
+{
+  background: #457bac;
+  color: #FFF;
+  transition-timing-function: ease-in;
+  transition: 0.3s;
+  
+}
+
+header nav ul li a
+{
+  display: block;
+
+
+}
+
+header nav ul li :link
+{
+  color: inherit;
+  text-decoration: none;
+}
+
+header nav ul li a :hover
+{
+  color: inherit;
+}
+
+main
+{
+  width: 90%;
+  margin: 0px auto 0px auto;
+
+}
+
+article{
+  float: left;
+  width: 75%;
+  padding: 5px;
+  min-height: 300px;
+  /*padding-top: 90px !important;
+  margin-bottom: 75px !important;*/
+  
+}
+
+aside{
+  float: right;
+  width: 22%;
+  min-height: 150px;
+  padding: 5px;
+  border: 1px black solid;
+  background-image:url(../img/aside.jpg);
+}
+
+footer {
+  float: left;
+  width: 100%;
+  margin-top: 10px;
+  background-color: #4580b4;
+  color: #FFF;
+  border-top : black 1px solid;
+  border-bottom: black 1px solid;
+  border-left: none;
+  border-right: none;
+  bottom:0px;
+  font-family: 'Source Sans Pro', sans-serif;
+  position: static;
+
+
+}
+
+footer div {
+  float: left;
+  width: 33%;
+  padding: 5px 0px 5px 0px;
+  text-align: center;
+
+}
+
+footer a {
+  text-decoration: none;
+  font-style: italic;
+  color: #FFF;
+}
+
+footer img {
+  width: 20px;
+}
+
+h1:before{
+  content: url(../img/puce.png);
+  padding-right: 3px;
+  
+  
+}
+
+p{
+  text-align: justify;
+
+}
+
+form input:hover{
+  border-color: #0000ff;
+}
+
+form input{
+
+  margin: 5px;
+}
+
+.champ{
+  cursor: progress;
+}
+
+a:hover {
+  cursor: crosshair;
+}
+
+.contenu {
+  text-align: center;
+  alignment-baseline: central;
+  align-content: center;
+  border : #4580b4 3px solid;
+  padding: 3px;
+  width: auto;
+
+}
+
+.tableau {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th{
+  border: 1px solid #4580b4;
+  border-bottom: 2px;
+}
+
+thead, tfoot{
+  border : 2px solid #4580b4;
+}
+
+thead{
+  font-weight: bold;
+}
+
+tfoot{
+  font-style: italic; 
+  text-align: center;
+
+}
+
+tr:nth-child(even)
+{background-color: #f0f8ff;}
+
+
+#mobile_menu {
+
+  background : Url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NUYyQjRCNzQyMDRDMTFFNzk1QzA4REQ5RTg5MzNFNkUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NUYyQjRCNzUyMDRDMTFFNzk1QzA4REQ5RTg5MzNFNkUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo1RjJCNEI3MjIwNEMxMUU3OTVDMDhERDlFODkzM0U2RSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo1RjJCNEI3MzIwNEMxMUU3OTVDMDhERDlFODkzM0U2RSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PvunQuYAAABGSURBVHja7NQxCgAgDMXQRrz/lb/O7lLBdOwUaHkkqc4Z1TwGzHMBXH2K/XN4gqcC0AEDlFAJlVAJDVBCJVRCJfw+YAkwADSiGDdEMMgZAAAAAElFTkSuQmCC');
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 25px;
+  right: 5px;
+  cursor: pointer;
+  display: none;
+
+}
+
+
+
+
+@media print {
+
+  header {
+    display: none;
+  }
+  footer{
+    display: none;
+  }
+  main article{
+    width: 100%;
+    font-family: Arial black;
+    color: black
+  }
+  aside {
+    display: none;
+  }
+  h1,h2,h3 {
+    text-shadow: none;
+  }
+  form {
+    border: 1px solid black;
+  }
+  table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th,tfoot{
+    border: 2px solid black;
+  }
+
+  td{
+    border: 1px solid black;
+  }
+  tr:nth-child(even){
+    background-color: gray;
+  }
+  a {
+    display: none;
+  }
+  input[type="submit"] {
+    display: none;
+  }
+  input[type="reset"] {
+    display: none;
+  } 
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  body {
+    width: 100%;
+  }
+  main section {
+    width: 80%;
+    border: none;
+  }
+  main aside {
+    width: auto;
+  }
+  #mobile_menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #mobile_menu {
+    display: block;
+  }
+  header nav,ul,li{
+    width: 100%;
+    margin: 0;
+  }
+  header nav{
+    display: none;
+  }
+  body {
+    width: 100%;
+    margin: 0;
+  }
+  main article {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  main aside {
+    display: none;
+  }
+  footer div{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  br {
+    display: none;
+  }
+
+  .top {
+    display: none;
+  }
+
+  footer{
+    bottom: 0 ;
+  }
+
+
+
+}
+
+input[type="text"] {
+  width: 100% ;
+}
+
+
+textarea {
+  width: 100% ;
+}
+
+
+
+input[type="email"] {
+  width: auto ;
+}
+
+input[type="password"] {
+  width: auto ;
+}
+
+.bouton-vert {
+  padding:6px 0 6px 0;
+  font:bold 13px Arial;
+  background:#2ECC40;
+  color:#fff;
+  border-radius:2px;
+  width:100px;
+  border:none;
+}
+
+.bouton-rouge {
+  padding:6px 0 6px 0;
+  font:bold 13px Arial;
+  background:#FF4136;
+  color:#fff;
+  border-radius:2px;
+  width:100px;
+  border:none;
+}
+
+}

@@ -1,0 +1,361 @@
+#cv {
+	margin : 0px;
+
+}
+
+#upside {
+	float: left;
+	width: 100%;
+	background-color: #8A8585;
+	border-radius: 2px;
+	border-bottom: 5px #FFB8CA solid;
+
+
+}
+
+
+
+
+#imgp {
+	width: 15%;
+
+	float: left;
+	margin: 0px;
+	align-content: center;
+	margin-right: 0px;
+}
+
+
+#cvheader {
+
+	width: 83%;
+	min-height: 50px;
+	padding: 5px;
+	float: right;
+	margin-left: 0px;
+
+}
+
+#header_text {
+	width: 83%;
+	min-height: 50px;
+	padding: 5px;
+	float: right;
+	margin-left: 0px;
+}
+
+#cvleft {
+	background-color: #8A8585;
+	float: left;
+
+	width:16%;
+
+}
+
+#cvleft #contact_t .fa {
+	padding: 3px;
+}
+
+
+
+#cv h2,h3,h4,h5,h6 {
+	font-family: Asap;
+	color: white;
+	font-style: none;
+	text-shadow: none;
+
+	margin: 0px;
+}
+
+#cvleft h4 {
+	padding: 5px 0px 5px 10px;
+	font-family: Asap;
+	font-size: 15px;
+	color: white;
+}
+
+#cvleft h3 {
+	padding: 2px 0px 2px 0px;
+}
+
+#cv p {
+	font-family: roboto;
+	color: white;
+	padding-top: 5px;
+	padding-right: 50px;
+	margin: 0px;
+
+}
+
+#cv .contact_t p {
+	text-align: center;
+	color: black;
+	font-size: 14px;
+	padding: 3px 3px 3px 3px;
+	margin: -20px 0px 0px 0px;
+	font-family: roboto;
+
+}
+
+
+main {
+	width: 95%;
+}
+
+.img-circle {
+
+	border-radius: 100%;
+	border: 2px solid #FFB8CA;
+	margin-top: 25px ;
+	margin-bottom: 25px ;
+	margin-left: 25px;
+	margin-right: 25px;
+	width: 80% ;
+}
+
+hr {
+	border: 3px #FFB8CA solid;
+	float: right;
+	width: 80%;
+	margin-right: 47px;
+	border-radius: 1px;
+}
+
+
+
+.jaune {
+	float: left;
+	background-color: #FFB8CA;
+	height: 7px;
+
+}
+
+.gris {
+	background-color: grey;
+	height: 7px;
+	margin: 7px 10px 7px 10px;
+	width: auto;
+}
+
+
+#j1 {
+	width: 7%;
+}
+
+#j2 {
+	width: 80%;
+}
+
+#j3 {
+	width: 10%
+}
+
+#j4 {
+	width: 33%;
+}
+
+#j5 {
+	width: 80%;
+}
+
+#j6 {
+	width: 80%;
+}
+
+#j7 {
+	width: 80%;
+}
+
+#j8 {
+	width: 80%;
+}
+
+#j9 {
+	width: 85%;
+}
+
+#j10 {
+	width: 05%;
+}
+
+main #cvleft h3 {
+	height: 20px;
+	background-image: linear-gradient(135deg, white 90%, #8A8585 10%);
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	color: black;
+}
+
+main #cvleft h3 i {
+	background: white;
+	background-size: auto auto;
+	width: 50px;
+	height: 50px;
+	background-size: 100% 100%;
+	border-radius: 60%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 10px;
+	margin-right: 15px;
+	text-shadow: 2px 2px 2px #777;
+	padding-right: 3px;
+
+
+}
+
+#cvleft .contact_t {
+	background-color: #FFB8CA;
+	margin-top: 5px;
+	width: 100%;
+	min-height: 200px;
+
+}
+
+
+#contact {
+	background-color: #8A8585;
+	border-radius: 0px 0px 20px 20px;
+	width: 60%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2px;
+
+}
+
+.fa {
+	display: flex;
+	padding-left: 2px;
+}
+
+#cvleft .black {
+	color: black;
+	padding-left: 4px;
+}
+
+
+
+
+
+
+
+#cv #bandeau_l {
+	float: left;
+	width: 19.2%;
+	background-color: #F6E6FA;
+	min-height: 926px;
+	text-align: center;
+	padding-top: 0px;
+
+}
+
+
+
+#bandeau_l .date {
+	color: black;
+	font: bold 20px Raleway;
+}
+
+#bandeau_r {
+	width: 64.107%;
+	min-height: 932px;
+	background-color: #FAF5FF;
+	padding: 0px;
+}
+
+#bandeau_r hr {
+	float: left;
+	width: 85%;
+	border: 3px #F6E6FA solid;
+	border-radius: 0px 2px 2px 0px;
+}
+
+#bandeau_l .fa {
+	align-items: center;
+}
+
+.icone {
+	padding: 15px 5px 10px 5px;
+}
+
+.icone i {
+	width: 80px;
+	height: 80px;
+	border-radius: 60%;
+	display: flex;
+	background-color: #4A4B4B;
+	justify-content: center;
+	color: white;
+}
+
+#bandeau_r h4 {
+	color: grey;
+	font-size: 15px;
+	font-family: Asap;
+	padding: 35px 0px 20px 20px;
+	font-style: bold;
+}
+
+#bandeau_r h5 {
+	color: black;
+	font-size: 19px;
+	font-family: Asap;
+	padding: 5px 0px 2px 20px;
+	font-style: bold;
+}
+
+#bandeau_r h6 {
+	color: black;
+	font-size: 15px;
+	font-family: roboto;
+	padding: 0px 0px 9px 20px;
+}
+
+
+
+#certif_l {
+	padding-top: 35px
+
+}
+
+#hobbies_l {
+	padding-top: 70px;
+}
+
+#cv #cvleft_text {
+	text-align: center;
+	padding: 5px 0px 9px 0px;
+	font-style: bold;
+	font-family: roboto;
+
+}
+
+
+
+@media print {
+
+	#bandeau_l {
+		background-color: white;
+	}
+
+	#bandeau_r {
+		background-color: white;
+	}
+
+	hr {
+		display: none;
+	}
+
+	#cv_left {
+		background-color: white
+	}
+
+	#contact {
+		background-color: white;
+	}
+}
+

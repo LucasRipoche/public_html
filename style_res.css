@@ -1,0 +1,191 @@
+@media (min-width: 1025px){
+   .Tableau span {
+      display:inline; 
+      float:left; 
+      border:0.063em
+      solid #4286f4;
+      margin:0.063em; 
+      padding:0.188em;
+   }
+
+   .Tableau p {
+      clear: left; 
+      text-align: right; 
+      margin: 0.0em;
+      padding: 0.0em; 
+      height: 0.063em;
+   }
+
+   .Tableau p.legende { 
+      font-weight:bold; 
+      text-align:
+      center; 
+      color: #4286f4;
+
+   }
+
+   .Tableau span.col1 { 
+    width:45%;
+    text-align:right;
+    min-height: 1.5em;
+
+ }
+ .Tableau span.col2 { 
+    width:45%;
+    min-height: 1.5em;
+
+ }
+
+ fieldset{
+    width : 50em;
+    margin : 5px 5px 5px 5px;
+ }
+
+
+
+ legend{
+   font-family: Arial;
+   font-size: 2em;
+}
+
+.legende{
+   padding: 2em;
+}
+
+img{
+   display:block;
+   margin-top:auto;
+   margin-right:auto;
+   margin-left:auto;
+   height:6em;
+   max-height:70%;
+
+}
+
+#option{
+   height: 4.9em;
+}
+
+#background {
+   background-color: #DED4D3;
+   height: 40em;
+}
+
+#option1{
+   text-align: right;
+   margin-right: auto;
+}
+
+#option1 input{
+   margin-right: 15em;
+}
+
+#pers_1 { border: 0px; padding-left: 6em;}
+#pers_2 { border: 0px; }
+#pers_3 { border: 0px; }
+#pers_4 { border: 0px; }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+   .Tableau span {
+      display:inline; 
+      float:left; 
+      border:0.063em
+      solid #4286f4;
+      margin:0.2em 1em 0.2em 1em; 
+      padding:0.188em;
+      font-size: 4em;
+   }
+
+   .Tableau p {
+      clear: left; 
+      text-align: right; 
+      margin: 0.0em;
+      padding: 0.0em; 
+      height: 0.063em;
+   }
+
+
+   .Tableau span.col1 { 
+    width:100%;
+    text-align:center;
+    min-height: 1.5em;
+
+ }
+ .Tableau span.col2 { 
+    width:100%;
+    min-height: 1.5em;
+    text-align: center;
+
+ }
+
+ img{
+   display:block;
+   margin-top:auto;
+   margin-right:auto;
+   margin-left:auto;
+   height:6em;
+   max-height:70%;
+
+}
+
+.Tableau p.legende { 
+   font-weight:bold; 
+   text-align:
+   center; 
+   color: #4286f4;
+
+}
+
+input{
+   vertical-align: top;
+   font-size: 0.9em;
+}
+
+fieldset{
+   width: 30em;
+}
+
+form{
+   width: 90%;
+}
+
+#background {
+   background-color: #DED4D3;
+   height: 280em;
+   width: 97em;
+   
+   /*padding-right: 0px;*/
+}
+
+#option1{
+   text-align: right;
+   margin-right: auto;
+}
+
+#option1 input{
+   margin-right: 30em;
+}
+
+.nbpers{
+   display: inline-block;
+}
+
+legend {
+   font-size: 2em;
+
+}
+
+body {
+   /*width: auto;*/
+}
+
+#pers_1 { border: 0px; padding-left: 4em; font-size: 1em;}
+#pers_2 { border: 0px; font-size: 1em; }
+#pers_3 { border: 0px; font-size: 1em; }
+#pers_4 { border: 0px; font-size: 1em; }
+
+}
+

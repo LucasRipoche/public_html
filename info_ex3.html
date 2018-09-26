@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<HEAD>
+<TITLE>TP3 – Lau Jacky VISITTHIDETH</TITLE>
+<meta charset="UTF-8">
+<script>
+function aff_requete(){
+document.write("Browser Name: " + navigator.appName);
+document.write("<br/>"); 
+document.write("Browser CodeName: " + navigator.appCodeName);
+document.write("<br/>"); 
+document.write("Browser Version: " + navigator.appVersion);
+document.write("<br/>"); 
+document.write("OS Version: " + navigator.platform);
+document.write("<br/>"); 
+document.write("Cookie Enabled: " + navigator.cookieEnabled);
+document.write("<br/>"); 
+document.write("Browser Language: " + navigator.systemLanguage);
+document.write("<br/>");
+document.write("User Agent: " + navigator.userAgent);
+document.write("<br/>"); 
+document.write("navigator.javaEnabled(): " + navigator.javaEnabled());
+}
+</script>
+</HEAD>
+
+<body>
+	<h1>Affichage Requête</h1>
+			<input type="button" value="Afficher Requête" onFocus="aff_requete()"></div>
+<body>
+</html>

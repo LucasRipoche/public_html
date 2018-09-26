@@ -1,0 +1,37 @@
+<html>
+
+<head>
+ <title>Convertisseur</title>
+ <style type="text/css">
+ @import url(style_convertisseur.css);
+</style>
+
+<script type="text/Javascript" src="convertisseur_js.js"></script>
+
+<meta charset="UTF-8">
+
+</head>
+<body>
+
+  <form>
+
+    <p class="legende">
+      <span class="col1"><h1>Convertisseur de devise :</h1></span><br>
+      <span class="col2">
+        Somme en $ : <input type="text" onchange="afficherMessage()" onfocus="clear()" id="dollar" value="0"><br>
+        Somme en € : <input type="text" onchange="afficherMessage()" onfocus="clear()" id="euro" value="0"><br>
+        Somme en yuan : <input type="text" onchange="afficherMessage()" onfocus="clear()" id="yuan" value="0">
+      </span>
+    </p>
+
+    <p class="legende">
+     <span class="col2">
+       <input type="reset">
+     </span>
+   </p>
+
+
+ </form>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<html>
+
+<head>
+	<title>Date</title>
+	<style type="text/css">
+	@import url(style_date.css);
+</style>
+
+<script type="text/javascript" >
+
+	function c_jours() {
+
+		var s_a = document.getElementById("date_a").value;
+		
+
+		var s_d = document.getElementById("date_d").value;
+
+
+		var s_as = new Date(s_a).getTime();
+		var s_ds =  new Date(s_d).getTime();
+
+		
+		var nb_s = (parseInt(s_ds)-parseInt(s_as))
+
+		if(nb_s > 0){
+
+		var n_j = (nb_s/8.64e+7)+1;
+
+
+		document.getElementById("nb_jours").value = n_j;
+		}
+		else {
+			alert("Date de départ avant date d'arrivée")
+		}
+
+		
+	}
+
+
+</script>
+
+<meta charset="UTF-8">
+
+</head>
+<body>
+
+	<form>
+		Entrez la date de d'arrivée : <input type="date" id="date_a"><br>
+		Entrez la date de départ : <input type="date" id="date_d" onblur="c_jours()"><br>
+		Nombre de jours <input type="text" attr="readonly" id="nb_jours">
+	</form>
+
+</body>
+</html>
